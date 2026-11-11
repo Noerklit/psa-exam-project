@@ -23,15 +23,12 @@ def load_seeds(directory: str) -> list[str]:
                 seeds.append(f.read())
     return seeds
 
-SEEDS = load_seeds("../fuzzing_seeds/TOML")
+SEEDS = load_seeds("fuzzing_seeds/TOML/")
+
 
 if __name__ == "__main__":
     random.seed(1)
-
-    if SEEDS.__sizeof__ == 0:
-        print("OOH NOOOOOOOOOOOO")
-    else:
-        print("jhnwfekjnwfjknwkjen " + SEEDS.__sizeof__)
+    print("Length of SEEDS: ", len(SEEDS))
     
     fuzzer = GreyboxFuzzer(SEEDS, Mutator(), PowerSchedule())
     runner = FunctionCoverageRunner(sut)

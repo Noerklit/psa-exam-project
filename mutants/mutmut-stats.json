@@ -1,81 +1,81 @@
 {
     "tests_by_mangled_function_name": {
         "toml_sut._parser.x_make_safe_parse_float": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_loads": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_parse_basic_str": [
             "tests/test_tomllib.py::test_basic"
         ],
         "toml_sut._parser.x_parse_key_value_pair": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_parse_key": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_key_value_rule": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_parse_one_line_basic_str": [
             "tests/test_tomllib.py::test_basic"
         ],
         "toml_sut._re.x_match_to_number": [
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_basic",
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x\u01c1Flags\u01c1__init__": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x\u01c1Output\u01c1__init__": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x\u01c1Flags\u01c1is_": [
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_basic",
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_skip_comment": [
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_basic",
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_parse_value": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_parse_key_part": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x_skip_chars": [
+            "tests/test_tomllib.py::test_basic",
             "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": [
-            "tests/test_tomllib.py::test_table_and_array",
-            "tests/test_tomllib.py::test_basic"
+            "tests/test_tomllib.py::test_basic",
+            "tests/test_tomllib.py::test_table_and_array"
         ],
         "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": [
             "tests/test_tomllib.py::test_table_and_array"
@@ -158,11 +158,11 @@
         ],
         "toml_sut._parser.x_skip_chars": [
             "toml_sut._parser.x_create_dict_rule",
-            "toml_sut._parser.x_loads",
-            "toml_sut._parser.x_parse_key_value_pair",
-            "toml_sut._parser.x_parse_key",
             "toml_sut._parser.x_parse_key_part",
-            "toml_sut._parser.x_skip_comments_and_array_ws"
+            "toml_sut._parser.x_parse_key_value_pair",
+            "toml_sut._parser.x_loads",
+            "toml_sut._parser.x_skip_comments_and_array_ws",
+            "toml_sut._parser.x_parse_key"
         ],
         "toml_sut._parser.x_key_value_rule": [
             "toml_sut._parser.x_loads"
@@ -193,8 +193,8 @@
             "toml_sut._parser.x_key_value_rule"
         ],
         "toml_sut._parser.x_skip_comment": [
-            "toml_sut._parser.x_skip_comments_and_array_ws",
-            "toml_sut._parser.x_loads"
+            "toml_sut._parser.x_loads",
+            "toml_sut._parser.x_skip_comments_and_array_ws"
         ],
         "toml_sut._parser.x_parse_one_line_basic_str": [
             "toml_sut._parser.x_parse_value"
