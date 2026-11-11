@@ -1,0 +1,12 @@
+Integrating Mutation Testing and Fuzzing
+
+This project explores the integration of mutation testing and fuzzing to improve the guidance of input generation. 
+The objective is to implement a lightweight Python prototype, using or extending fuzzers from The Fuzzing Book, that 
+leverages mutation scores as a feedback signal to guide fuzzing. The fuzzer begins with seed inputs and a fixed set 
+of simple program mutants (syntactic or semantic variations of the original system under test), e.g., generated with 
+a tool such as mutmut or created by hand. Each generated input is evaluated on both the original and mutant versions; 
+inputs that “kill” mutants (i.e., produce divergent outputs or behaviors) are treated as higher-fitness and prioritized for further mutation. 
+Since running every input on every mutant is expensive, consider strategies to reduce this cost (e.g., only executing mutants whose mutated code 
+is reached by the input). You need to select a medium-sized system under test written in Python (e.g., a parser) to apply the method. 
+The goal is to assess whether mutation-based fitness leads to higher coverage, a higher mutation score on mutants not used for guidance, or more 
+bug-revealing inputs, compared to coverage-guided fuzzing. (As an example see: “Guiding Greybox Fuzzing with Mutation Testing” (ISSTA 2023))

@@ -1,0 +1,17 @@
+###### Questions ######
+
+--------------- 5/11-2026 ----------------------
+If we do mutate files manually, how many do you deem relevant? And what to mutate in general, i.e. condition, return statements?
+	Manual mutatation can cause bias. 
+	So therefore use the package preferably.
+Do we generate "more" mutated files, or do we have a fixed set?
+	You will start with a fixed sets, and then when your input reaches a deadpoint, you could create new mutations, and generate more later.
+Does the inputs "only" get prioritized if it kills mutants?
+	Think so, did no ask
+Do we differ between the original program and the mutated ones, in any way?
+	The baseline should be the output of the OG program, and the mutations then show. 
+Is GreyBox Fuzzing not the way to go? Because the Grammar-fuzzing would not be able to be seeded, right?
+	We should use the grammar fuzzer to get the valid inouts/seeds, and then use the graybox fuzzing to guide.
+Scope? what is the end goal, to what we should deliver.
+	Code + report(4-5 pages per student)
+	She will give a template to the report
