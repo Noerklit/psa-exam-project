@@ -3,6 +3,7 @@ import tomllib   # resolves to YOUR local ./tomllib when run from the project ro
 from fuzzingbook.GreyboxFuzzer import Mutator, PowerSchedule, GreyboxFuzzer
 from fuzzingbook.MutationFuzzer import FunctionCoverageRunner
 from fuzzingbook.Coverage import population_coverage
+from pathlib import Path # For reading seeds.
 
 print("Using:", tomllib.__file__)   # must point into your project folder
 
@@ -13,16 +14,25 @@ def sut(inp: str):
     except tomllib.TOMLDecodeError:   # invalid TOML is expected, not a bug
         return None
 
+def load_seeds(directory: str) -> list[str]:
+    seeds = []
+    for path in sorted(Path(directory).iterdir()):
+        if path.is_file():
+            # newline="" keeps \r\n exactly as written in the file
+            with open(path, "r", encoding="utf-8", newline="") as f:
+                seeds.append(f.read())
+    return seeds
 
-SEEDS = [
-    'title = "x"\nn = 42\n',
-    '[server]\nhost = "localhost"\nports = [8000, 8001]\n',
-    'a.b.c = 1.5\nd = { e = true, f = "g" }\n[[items]]\nname = "z"\n',
-    'when = 1979-05-27T07:32:00Z\ns = """multi\nline"""\n',
-]
+SEEDS = load_seeds("../fuzzing_seeds/TOML")
 
 if __name__ == "__main__":
     random.seed(1)
+
+    if SEEDS.__sizeof__ == 0:
+        print("OOH NOOOOOOOOOOOO")
+    else:
+        print("jhnwfekjnwfjknwkjen " + SEEDS.__sizeof__)
+    
     fuzzer = GreyboxFuzzer(SEEDS, Mutator(), PowerSchedule())
     runner = FunctionCoverageRunner(sut)
     outcomes = fuzzer.runs(runner, trials=5000)
