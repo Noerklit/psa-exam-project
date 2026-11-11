@@ -231,6 +231,7 @@ class Seed:
         self.coverage: Set[Location] = set()
         self.distance: Union[int, float] = -1
         self.energy = 0.0
+        self.mutants_killed = 0
 
     def __str__(self) -> str:
         """Returns data as string representation of the seed"""
@@ -427,7 +428,29 @@ class GreyboxFuzzer(AdvancedMutationFuzzer):
         return (result, outcome)
 
 class GreyboxFuzzer_MutationGuided(AdvancedMutationFuzzer):
-    ...
+    """Mutation-guided greybox fuzzer based on mutants killed"""
+    
+    def reset(self):
+        super().reset()
+        self.max_mutants_killed = 0
+        self.population = []
+        
+    def run(self, runner) -> Tuple[Any, str]:
+        """
+        Should take whatever the runner returns and if the given input results
+        in more mutants killed than current max_mutants_killed
+        we add the input to our population 
+        (The runner for this needs to be defined as well)    
+        """
+        result, outcome, mutants_killed = runner.run(self.inp)
+        
+        if mutants_killed > self.max_mutants_killed:
+            self.max_mutants_killed = mutants_killed
+            seed = Seed(self.inp)
+            seed.mutants_killed = mutants_killed
+            self.population.append(seed)
+        return (result, outcome)
+        
 
 if __name__ == '__main__':
     seed_input = "good"

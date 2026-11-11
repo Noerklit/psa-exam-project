@@ -440,6 +440,44 @@ class FunctionCoverageRunner(FunctionRunner):
     def coverage(self) -> Set[Location]:
         return self._coverage
 
+class MutationGuidedRunner(FunctionRunner):
+    def __init__(self, original_funcs, mutant_funcs):
+        super().__init__()
+        self.original_funcs = original_funcs
+        self.mutant_funcs = mutant_funcs
+    
+    def run(self, inp: str):
+        try:
+            result = self.original_funcs(inp)
+            outcome = "PASS"
+            original_failed = False
+        except Exception as e:
+            result = None
+            outcome = "FAIL"
+            original_failed = True
+            original_error = type(e)
+        
+        mutants_killed = 0
+        for mutant_func in self.mutant_funcs:
+            try:
+                mutant_result = mutant_func(inp)
+                mutant_failed = False
+            except Exception as e:
+                mutant_result = None
+                mutant_failed = True
+                mutant_error = type(e)
+            # We should check that these are correct, and if we are missing any cases
+            # If the original function had a different result than the mutant, mutant was killed
+            if original_failed != mutant_failed:
+                mutants_killed += 1
+            # If the original input passes and the mutant_result is different from the result a mutant was killed
+            elif not original_failed and mutant_result != result:
+                mutants_killed += 1
+            # If the original input failed and the mutant error is not equal the original error a mutant was killed
+            elif original_failed and mutant_error != original_error:
+                mutants_killed += 1
+        return (result, outcome, mutants_killed)
+
 if __name__ == '__main__':
     http_runner = FunctionCoverageRunner(http_program)
     http_runner.run("https://foo.bar/")

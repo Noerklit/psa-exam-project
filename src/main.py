@@ -1,7 +1,7 @@
 import random
 import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from the project root
 from fuzzingbook.GreyboxFuzzer import Mutator, PowerSchedule, GreyboxFuzzer, GreyboxFuzzer_MutationGuided
-from fuzzingbook.MutationFuzzer import FunctionCoverageRunner
+from fuzzingbook.MutationFuzzer import FunctionCoverageRunner, MutationGuidedRunner
 from fuzzingbook.Coverage import population_coverage
 from pathlib import Path # For reading seeds.
 
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     # Mutation guided fuzzer
 
     fuzzer_2 = GreyboxFuzzer_MutationGuided(SEEDS, Mutator(), PowerSchedule())
-    runner_2 = FunctionCoverageRunner() # Here we should then, as argument, have the new SUT, that is the file of mutated functions.
+    runner_2 = MutationGuidedRunner() # Here we should then, as argument, have the new SUT, that is the file of mutated functions.
                                         # This new SUT function should maybe get an argument get what the "correct" answer should be, 
                                         # and then run through some/all of the mutation functions, and log the amount of mutants killed 
                                         # by this input, i.e. the amount of answers that differ from the argument.
