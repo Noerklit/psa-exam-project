@@ -1,5 +1,5 @@
 import random
-import tomllib   # resolves to YOUR local ./tomllib when run from the project root
+import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from the project root
 from fuzzingbook.GreyboxFuzzer import Mutator, PowerSchedule, GreyboxFuzzer
 from fuzzingbook.MutationFuzzer import FunctionCoverageRunner
 from fuzzingbook.Coverage import population_coverage

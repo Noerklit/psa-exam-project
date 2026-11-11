@@ -1,0 +1,275 @@
+{
+    "tests_by_mangled_function_name": {
+        "toml_sut._parser.x_make_safe_parse_float": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_loads": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_parse_basic_str": [
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_parse_key_value_pair": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_parse_key": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_key_value_rule": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_parse_one_line_basic_str": [
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._re.x_match_to_number": [
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1__init__": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x\u01c1Output\u01c1__init__": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1is_": [
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_skip_comment": [
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_parse_value": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_parse_key_part": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x_skip_chars": [
+            "tests/test_tomllib.py::test_invalid",
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": [
+            "tests/test_tomllib.py::test_table_and_array",
+            "tests/test_tomllib.py::test_basic"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": [
+            "tests/test_tomllib.py::test_table_and_array"
+        ],
+        "toml_sut._parser.x_skip_comments_and_array_ws": [
+            "tests/test_tomllib.py::test_table_and_array"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1set": [
+            "tests/test_tomllib.py::test_table_and_array"
+        ],
+        "toml_sut._parser.x_create_dict_rule": [
+            "tests/test_tomllib.py::test_table_and_array"
+        ],
+        "toml_sut._parser.x_parse_array": [
+            "tests/test_tomllib.py::test_table_and_array"
+        ],
+        "toml_sut._parser.x\u01c1TOMLDecodeError\u01c1__init__": [
+            "tests/test_tomllib.py::test_invalid"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_tomllib.py::test_uses_local_copy": 0.00014693900016027328,
+        "tests/test_tomllib.py::test_basic": 0.0006163699999888195,
+        "tests/test_tomllib.py::test_table_and_array": 0.0005696609998722124,
+        "tests/test_tomllib.py::test_invalid": 0.00031065000007401977
+    },
+    "stats_time": 1.0023092999999998,
+    "function_hashes": {
+        "toml_sut._re.x_match_to_datetime": "9b1548eef3e4",
+        "toml_sut._re.x_match_to_localtime": "a9cad682c4be",
+        "toml_sut._re.x_match_to_number": "d19b810b03f4",
+        "toml_sut._parser.x\u01c1TOMLDecodeError\u01c1__init__": "248e634d3404",
+        "toml_sut._parser.x_load": "b05a58e64137",
+        "toml_sut._parser.x_loads": "dff502a8b621",
+        "toml_sut._parser.x\u01c1Flags\u01c1__init__": "99e807b3fa89",
+        "toml_sut._parser.x\u01c1Flags\u01c1add_pending": "f9205ee6e63b",
+        "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": "bc8bbf7f2b59",
+        "toml_sut._parser.x\u01c1Flags\u01c1unset_all": "372571c5c59d",
+        "toml_sut._parser.x\u01c1Flags\u01c1set": "de9889c6315c",
+        "toml_sut._parser.x\u01c1Flags\u01c1is_": "5e2b4769059a",
+        "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": "c9f7e130e0c2",
+        "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": "5037d2006fe5",
+        "toml_sut._parser.x\u01c1NestedDict\u01c1append_nest_to_list": "661080880ea9",
+        "toml_sut._parser.x\u01c1Output\u01c1__init__": "35383dc0a5d5",
+        "toml_sut._parser.x_skip_chars": "c503b70ec178",
+        "toml_sut._parser.x_skip_until": "7f299049a4b9",
+        "toml_sut._parser.x_skip_comment": "37f00191f461",
+        "toml_sut._parser.x_skip_comments_and_array_ws": "3811587e3bbe",
+        "toml_sut._parser.x_create_dict_rule": "dfb26c078cfa",
+        "toml_sut._parser.x_create_list_rule": "8096908aca23",
+        "toml_sut._parser.x_key_value_rule": "b439c2dcacbc",
+        "toml_sut._parser.x_parse_key_value_pair": "be23a0003fa7",
+        "toml_sut._parser.x_parse_key": "64029c1c52b6",
+        "toml_sut._parser.x_parse_key_part": "a690d2cb4d12",
+        "toml_sut._parser.x_parse_one_line_basic_str": "1c213114b289",
+        "toml_sut._parser.x_parse_array": "2ee54b7ea3d4",
+        "toml_sut._parser.x_parse_inline_table": "c6e8eec4c538",
+        "toml_sut._parser.x_parse_basic_str_escape": "96ba8c3b6b2f",
+        "toml_sut._parser.x_parse_basic_str_escape_multiline": "dea55b093b9c",
+        "toml_sut._parser.x_parse_hex_char": "50ff150cb663",
+        "toml_sut._parser.x_parse_literal_str": "2a8a72de8147",
+        "toml_sut._parser.x_parse_multiline_str": "284e2a54f616",
+        "toml_sut._parser.x_parse_basic_str": "682b9ff9a455",
+        "toml_sut._parser.x_parse_value": "7fb860264322",
+        "toml_sut._parser.x_is_unicode_scalar_value": "f5887c64413f",
+        "toml_sut._parser.x_make_safe_parse_float": "f7d2afc41415"
+    },
+    "function_dependencies": {
+        "toml_sut._parser.x\u01c1Output\u01c1__init__": [
+            "toml_sut._parser.x_loads"
+        ],
+        "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": [
+            "toml_sut._parser.x\u01c1Output\u01c1__init__"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1__init__": [
+            "toml_sut._parser.x\u01c1Output\u01c1__init__"
+        ],
+        "toml_sut._parser.x_make_safe_parse_float": [
+            "toml_sut._parser.x_loads"
+        ],
+        "toml_sut._parser.x_skip_chars": [
+            "toml_sut._parser.x_create_dict_rule",
+            "toml_sut._parser.x_loads",
+            "toml_sut._parser.x_parse_key_value_pair",
+            "toml_sut._parser.x_parse_key",
+            "toml_sut._parser.x_parse_key_part",
+            "toml_sut._parser.x_skip_comments_and_array_ws"
+        ],
+        "toml_sut._parser.x_key_value_rule": [
+            "toml_sut._parser.x_loads"
+        ],
+        "toml_sut._parser.x_parse_key_value_pair": [
+            "toml_sut._parser.x_key_value_rule"
+        ],
+        "toml_sut._parser.x_parse_key": [
+            "toml_sut._parser.x_parse_key_value_pair",
+            "toml_sut._parser.x_create_dict_rule"
+        ],
+        "toml_sut._parser.x_parse_key_part": [
+            "toml_sut._parser.x_parse_key"
+        ],
+        "toml_sut._parser.x_parse_value": [
+            "toml_sut._parser.x_parse_key_value_pair",
+            "toml_sut._parser.x_parse_array"
+        ],
+        "toml_sut._re.x_match_to_number": [
+            "toml_sut._parser.x_parse_value"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1is_": [
+            "toml_sut._parser.x_create_dict_rule",
+            "toml_sut._parser.x_key_value_rule"
+        ],
+        "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": [
+            "toml_sut._parser.x_create_dict_rule",
+            "toml_sut._parser.x_key_value_rule"
+        ],
+        "toml_sut._parser.x_skip_comment": [
+            "toml_sut._parser.x_skip_comments_and_array_ws",
+            "toml_sut._parser.x_loads"
+        ],
+        "toml_sut._parser.x_parse_one_line_basic_str": [
+            "toml_sut._parser.x_parse_value"
+        ],
+        "toml_sut._parser.x_parse_basic_str": [
+            "toml_sut._parser.x_parse_one_line_basic_str"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": [
+            "toml_sut._parser.x_loads"
+        ],
+        "toml_sut._parser.x_create_dict_rule": [
+            "toml_sut._parser.x_loads"
+        ],
+        "toml_sut._parser.x\u01c1Flags\u01c1set": [
+            "toml_sut._parser.x_create_dict_rule",
+            "toml_sut._parser.x_key_value_rule"
+        ],
+        "toml_sut._parser.x_parse_array": [
+            "toml_sut._parser.x_parse_value"
+        ],
+        "toml_sut._parser.x_skip_comments_and_array_ws": [
+            "toml_sut._parser.x_parse_array"
+        ],
+        "toml_sut._parser.x\u01c1TOMLDecodeError\u01c1__init__": [
+            "toml_sut._parser.x_parse_value"
+        ]
+    },
+    "config_fingerprint": {
+        "test_execution": "2e38e77b22c3",
+        "test_selection": "5955b66c0091",
+        "timeout": "d3052321fdc3",
+        "type_check": "2e38e77b22c3"
+    },
+    "watched_file_hashes": {
+        "pyproject.toml": "ef01e3603305",
+        "uv.lock": "3c0595782078",
+        "Description of task.txt": "a2dbc65a65af",
+        "Questions_and_answers.txt": "d5fa6f515882",
+        "SUT.txt": "a8e8ac45692c",
+        "fuzzing_seeds/TOML/CRLF.txt": "b3879294bfb6",
+        "fuzzing_seeds/TOML/array_of_tables.txt": "8c96eadfbd80",
+        "fuzzing_seeds/TOML/arrays.txt": "0bfea7fa457c",
+        "fuzzing_seeds/TOML/booleans_and_empty.txt": "13ab36005dfc",
+        "fuzzing_seeds/TOML/border_numbers.txt": "2b637ffccb20",
+        "fuzzing_seeds/TOML/comments.txt": "c4d0967c75d0",
+        "fuzzing_seeds/TOML/dates_and_time.txt": "b3f9bd708b65",
+        "fuzzing_seeds/TOML/dates_edge.txt": "7ceb7fb586c1",
+        "fuzzing_seeds/TOML/escapes.txt": "a5f54ada9403",
+        "fuzzing_seeds/TOML/inline_tables.txt": "e2ea8fc051f0",
+        "fuzzing_seeds/TOML/literal_strings.txt": "7800b7f19abf",
+        "fuzzing_seeds/TOML/multi_line_literal_strings.txt": "26aa732da956",
+        "fuzzing_seeds/TOML/multi_line_strings.txt": "0dd54f470d46",
+        "fuzzing_seeds/TOML/numbers.txt": "bd550bce2992",
+        "fuzzing_seeds/TOML/strings.txt": "b68a7676e8ba",
+        "mutants/pyproject.toml": "ef01e3603305",
+        "mutants/toml_sut/__init__.py.meta": "8337af0c4106",
+        "mutants/toml_sut/__init__.py.spans": "50434fb64e05",
+        "mutants/toml_sut/_parser.py.meta": "952db9b7c18e",
+        "mutants/toml_sut/_parser.py.spans": "b4aaa8014e78",
+        "mutants/toml_sut/_re.py.meta": "6e9ccc6fd232",
+        "mutants/toml_sut/_re.py.spans": "0b9722ea4415",
+        "mutants/toml_sut/_types.py.meta": "8337af0c4106",
+        "mutants/toml_sut/_types.py.spans": "50434fb64e05",
+        "mutants/toml_sut/mypy.ini": "a56b56a5cddd",
+        "mutants/tomllib/__init__.py.meta": "8337af0c4106",
+        "mutants/tomllib/__init__.py.spans": "50434fb64e05",
+        "mutants/tomllib/_parser.py.meta": "3fd51849219a",
+        "mutants/tomllib/_parser.py.spans": "b4aaa8014e78",
+        "mutants/tomllib/_re.py.meta": "3079c3b62101",
+        "mutants/tomllib/_re.py.spans": "0b9722ea4415",
+        "mutants/tomllib/_types.py.meta": "8337af0c4106",
+        "mutants/tomllib/_types.py.spans": "50434fb64e05",
+        "mutants/tomllib/mypy.ini": "a56b56a5cddd",
+        "mutants/uv.lock": "3c0595782078",
+        "toml_sut/mypy.ini": "a56b56a5cddd"
+    },
+    "git_commit": "4ff7dd67bb7a9c2ab19ecdd9515e0e47bc56ea87"
+}

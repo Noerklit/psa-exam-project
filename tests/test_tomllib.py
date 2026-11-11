@@ -1,11 +1,11 @@
 import os
 import pytest
-import tomllib
+import toml_sut as tomllib
 
 
 def test_uses_local_copy():
     # guards against accidentally testing the stdlib module
-    assert os.path.basename(os.path.dirname(tomllib.__file__)) == "tomllib"
+    assert os.path.basename(os.path.dirname(tomllib.__file__)) == "toml_sut"
     assert "site-packages" not in tomllib.__file__ and "lib/python" not in tomllib.__file__.replace("\\", "/")
 
 

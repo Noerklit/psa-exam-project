@@ -20,7 +20,7 @@ dev = [
 pythonpath = ["."]
 
 [tool.mutmut]
-paths_to_mutate = ["tomllib/"]
+paths_to_mutate = ["toml_sut/"]
 tests_dir = ["tests/"]
 
 [tool.uv.sources]
