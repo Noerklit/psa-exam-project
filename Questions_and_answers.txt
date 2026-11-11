@@ -15,3 +15,7 @@ Is GreyBox Fuzzing not the way to go? Because the Grammar-fuzzing would not be a
 Scope? what is the end goal, to what we should deliver.
 	Code + report(4-5 pages per student)
 	She will give a template to the report
+
+
+---------------- 12/11-2026 -----------------
+How much should the seeds cover of the language? i.e. both arrays, strings, ints etc.

@@ -1,0 +1,8 @@
+bool_true = true
+bool_false = false
+empty_basic = ""
+empty_literal = ''
+empty_multi_basic = """"""
+empty_multi_literal = ''''''
+single_char = "a"
+spaces_only = "   "

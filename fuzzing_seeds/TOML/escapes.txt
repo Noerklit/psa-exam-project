@@ -1,0 +1,16 @@
+backspace = "a\bb"
+tab = "a\tb"
+newline = "a\nb"
+form_feed = "a\fb"
+carriage_return = "a\rb"
+quote = "a\"b"
+backslash = "a\\b"
+unicode_4 = "\u0041\u00e9\u20AC"
+unicode_8 = "\U0001F600\U00000041"
+multi_escapes = """
+line one\nline two \u0041
+tab\there \"quoted\" and ""two quotes"" inside
+"""
+multi_literal_quotes = '''
+it's "fine" ''two'' here
+'''

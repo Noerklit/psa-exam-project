@@ -1,0 +1,7 @@
+empty = {}
+point = { x = 1, y = 2 }
+name = { first = "Tom", last = "Preston-Werner" }
+nested = { a = { b = { c = 1 } } }
+dotted = { a.b = 1, a.c = 2 }
+with_array = { list = [1, 2, 3] }
+array_of_inline = [ { x = 1 }, { x = 2 } ]

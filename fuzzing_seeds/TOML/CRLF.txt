@@ -1,0 +1,10 @@
+a = 1
+b = "text"
+
+[t]
+c = [1,
+ 2]
+# comment
+d = """
+line
+"""

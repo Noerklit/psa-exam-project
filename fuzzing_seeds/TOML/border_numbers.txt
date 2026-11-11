@@ -1,0 +1,12 @@
+# border integers
+int1 = 1
+int2 = 0
+int3 = -1
+int4 = +1
+
+# border floats
+float1 = +1.0
+float2 = 3.14152222122212121212
+float3 = -0.000001
+float4 = 0.00000000
+float5 = 212121211212.0
