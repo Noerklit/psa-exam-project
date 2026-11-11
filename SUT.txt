@@ -1,0 +1,9 @@
+Prioritized list of relevant libraries we could use:
+1. https://github.com/python/cpython/blob/3.15/Lib/tomllib/_parser.py
+2. https://github.com/noahmorrison/chevron/blob/main/chevron/tokenizer.py
+3. https://github.com/PiotrDabkowski/pyjsparser/blob/master/pyjsparser/parser.py
+
+
+
+You can choose multible SUT's, or one big.
+You can then make a discussion of one of these ways. 
