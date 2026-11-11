@@ -853,12 +853,14 @@ import shutil
 
 PYAN = 'pyan3' if shutil.which('pyan3') is not None else 'pyan'
 
-if shutil.which(PYAN) is None:
-    # If installed from pypi, pyan may still be missing
-    os.system('pip install "git+https://github.com/uds-se/pyan#egg=pyan"')
-    PYAN = 'pyan3' if shutil.which('pyan3') is not None else 'pyan'
+# if shutil.which(PYAN) is None:
+#     # If installed from pypi, pyan may still be missing
+#     os.system('pip install "git+https://github.com/uds-se/pyan#egg=pyan"')
+#     PYAN = 'pyan3' if shutil.which('pyan3') is not None else 'pyan'
 
-assert shutil.which(PYAN) is not None
+# assert shutil.which(PYAN) is not None
+if shutil.which(PYAN) is None:
+    print("Warning: pyan not found; callgraph() will not work")
 
 def construct_callgraph(code, name="callgraph"):
     file_name = name + ".py"
