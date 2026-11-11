@@ -1,0 +1,27 @@
+[project]
+name = "psa-exam-project"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fuzzingbook>=1.2.2",
+    "matplotlib>=3.10.6",
+    "networkx>=3.6.1",
+    "numpy>=2.4.6",
+    "pyan",
+]
+
+[dependency-groups]
+dev = [
+    "mutmut>=3.8.1",
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.mutmut]
+paths_to_mutate = ["tomllib/"]
+tests_dir = ["tests/"]
+
+[tool.uv.sources]
+pyan = { git = "https://github.com/uds-se/pyan" }
