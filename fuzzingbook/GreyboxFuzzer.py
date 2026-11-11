@@ -426,6 +426,9 @@ class GreyboxFuzzer(AdvancedMutationFuzzer):
 
         return (result, outcome)
 
+class GreyboxFuzzer_MutationGuided(AdvancedMutationFuzzer):
+    ...
+
 if __name__ == '__main__':
     seed_input = "good"
     greybox_fuzzer = GreyboxFuzzer([seed_input], Mutator(), PowerSchedule())
