@@ -440,7 +440,7 @@ class FunctionCoverageRunner(FunctionRunner):
     def coverage(self) -> Set[Location]:
         return self._coverage
 
-class MutationGuidedRunner(FunctionRunner):
+class MutationGuidedRunner(Runner):
     def __init__(self, original_funcs, mutant_funcs):
         super().__init__()
         self.original_funcs = original_funcs
@@ -458,6 +458,9 @@ class MutationGuidedRunner(FunctionRunner):
             original_error = type(e)
         
         mutants_killed = 0
+
+        # TODO should be optimised to use Error codes as strings and not compare on values.
+        
         for mutant_func in self.mutant_funcs:
             try:
                 mutant_result = mutant_func(inp)

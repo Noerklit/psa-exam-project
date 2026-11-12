@@ -266,6 +266,11 @@ class PowerSchedule:
         seed: Seed = random.choices(population, weights=norm_energy)[0]
         return seed
 
+class MutantSchedule(PowerSchedule):
+    def assignEnergy(self, population):
+        for seed in population:
+            seed.energy = 1 + len(seed.mutants_killed)
+
 if __name__ == '__main__':
     population = [Seed("A"), Seed("B"), Seed("C")]
     schedule = PowerSchedule()
@@ -432,7 +437,7 @@ class GreyboxFuzzer_MutationGuided(AdvancedMutationFuzzer):
     
     def reset(self):
         super().reset()
-        self.max_mutants_killed = 0
+        self.killed_so_far = set()
         self.population = []
         
     def run(self, runner) -> Tuple[Any, str]:
@@ -442,13 +447,21 @@ class GreyboxFuzzer_MutationGuided(AdvancedMutationFuzzer):
         we add the input to our population 
         (The runner for this needs to be defined as well)    
         """
-        result, outcome, mutants_killed = runner.run(self.inp)
-        
-        if mutants_killed > self.max_mutants_killed:
-            self.max_mutants_killed = mutants_killed
-            seed = Seed(self.inp)
+        result, outcome, mutants_killed = super().run(runner)     # This calls the self.fuzz() for us
+
+        new_kills = mutants_killed - self.killed_so_far ## This creates the set of killed mutants that have NOT been seen before
+
+        ## We try to scehdule a seed if it kills an unkilled mutant, or the population is currently empty
+        if len(new_kills) > 0 or len(self.population) == 0:
+
+            for mutant in new_kills:
+                self.killed_so_far.add(mutant) ## add the new mutants killed to the set of mutants.
+
+            # Add this seed to the population
+            seed = Seed(self.inp) 
             seed.mutants_killed = mutants_killed
             self.population.append(seed)
+            
         return (result, outcome)
         
 

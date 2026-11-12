@@ -19,3 +19,7 @@ Scope? what is the end goal, to what we should deliver.
 
 ---------------- 12/11-2026 -----------------
 How much should the seeds cover of the language? i.e. both arrays, strings, ints etc.
+We have mutated our parser via MutMut, however it has mutated each funuction also, and not just our "parser" function that we usually call.
+	We can call all mutations of the parser function, however this would then again not test the other mutated functions, 
+	and therefore not the whole system, but instead just a function of the SUT, this being "parser"
+	Do you have any advice for us, maybe on how other groups have done it?

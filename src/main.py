@@ -1,6 +1,6 @@
 import random
 import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from the project root
-from fuzzingbook.GreyboxFuzzer import Mutator, PowerSchedule, GreyboxFuzzer, GreyboxFuzzer_MutationGuided
+from fuzzingbook.GreyboxFuzzer import Mutator, PowerSchedule, GreyboxFuzzer, GreyboxFuzzer_MutationGuided, MutantSchedule
 from fuzzingbook.MutationFuzzer import FunctionCoverageRunner, MutationGuidedRunner
 from fuzzingbook.Coverage import population_coverage
 from pathlib import Path # For reading seeds.
@@ -47,6 +47,11 @@ if __name__ == "__main__":
     print("Total generated inputs:", len(fuzzer.inputs))
     print("Population size:", len(fuzzer.population))
     print("Number of outcomes:", len(outcomes))
+    count = 0
+    for result, status in outcomes:
+        if result is not None:
+            count += 1
+    print("Number of not None outcomes: ", count)
 
     print("---------------")
     print("This is just a random sample of some of the inputs and the outcomes of these")
@@ -59,12 +64,12 @@ if __name__ == "__main__":
     #---------------------------------------------------------------------------------------------
     # Mutation guided fuzzer
 
-    fuzzer_2 = GreyboxFuzzer_MutationGuided(SEEDS, Mutator(), PowerSchedule())
-    runner_2 = MutationGuidedRunner() # Here we should then, as argument, have the new SUT, that is the file of mutated functions.
+    fuzzer_2 = GreyboxFuzzer_MutationGuided(SEEDS, Mutator(), MutantSchedule())
+    runner_2 = MutationGuidedRunner( ..., ...) # Here we should then, as argument, have the new SUT, that is the file of mutated functions.
                                         # This new SUT function should maybe get an argument get what the "correct" answer should be, 
                                         # and then run through some/all of the mutation functions, and log the amount of mutants killed 
                                         # by this input, i.e. the amount of answers that differ from the argument.
                                         #   When the amount of mutants killed by the input is returned to GreyboxFuzzer_MutationGuided, it should
                                         # then prioritise it appropiatly, i.e. if it kills many mutants, it should be prioritised higher, in the population.
 
-    outcomes = fuzzer.runs(runner, trials=5000) # Maybe we should tone it down to around 6-700 instead, if it takes to long time to run
+    # outcomes_2 = fuzzer_2.runs(runner_2, trials=600) 
