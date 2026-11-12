@@ -23,7 +23,7 @@ def load_seeds(directory: str) -> list[str]:
                 seeds.append(f.read())
     return seeds
 
-SEEDS = load_seeds("fuzzing_seeds/TOML/")
+SEEDS = load_seeds("gen_fuzzing_seeds/TOML/")
 
 
 if __name__ == "__main__":
@@ -64,7 +64,7 @@ if __name__ == "__main__":
                                         # This new SUT function should maybe get an argument get what the "correct" answer should be, 
                                         # and then run through some/all of the mutation functions, and log the amount of mutants killed 
                                         # by this input, i.e. the amount of answers that differ from the argument.
-                                        #   When the amount of mutants killed by the input is returned to GreyboxFuzzer_MutationGuided, it should
+                                        # When the amount of mutants killed by the input is returned to GreyboxFuzzer_MutationGuided, it should
                                         # then prioritise it appropiatly, i.e. if it kills many mutants, it should be prioritised higher, in the population.
 
     outcomes = fuzzer.runs(runner, trials=5000) # Maybe we should tone it down to around 6-700 instead, if it takes to long time to run

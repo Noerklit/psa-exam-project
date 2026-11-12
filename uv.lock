@@ -2498,6 +2498,7 @@ name = "psa-exam-project"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "coverage" },
     { name = "fuzzingbook" },
     { name = "matplotlib" },
     { name = "networkx", version = "3.6.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
@@ -2515,6 +2516,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "coverage", specifier = ">=7.17.2" },
     { name = "fuzzingbook", specifier = ">=1.2.2" },
     { name = "matplotlib", specifier = ">=3.10.6" },
     { name = "networkx", specifier = ">=3.6.1" },
