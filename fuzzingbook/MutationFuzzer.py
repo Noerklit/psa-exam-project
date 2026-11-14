@@ -441,45 +441,46 @@ class FunctionCoverageRunner(FunctionRunner):
         return self._coverage
 
 class MutationGuidedRunner(Runner):
-    def __init__(self, original_funcs, mutant_funcs):
-        super().__init__()
-        self.original_funcs = original_funcs
-        self.mutant_funcs = mutant_funcs
-    
-    def run(self, inp: str):
-        try:
-            result = self.original_funcs(inp)
-            outcome = "PASS"
-            original_failed = False
-        except Exception as e:
-            result = None
-            outcome = "FAIL"
-            original_failed = True
-            original_error = type(e)
-        
-        mutants_killed = 0
+    """Runs one input on the original program and on every mutant.
 
-        # TODO should be optimised to use Error codes as strings and not compare on values.
-        
-        for mutant_func in self.mutant_funcs:
-            try:
-                mutant_result = mutant_func(inp)
-                mutant_failed = False
-            except Exception as e:
-                mutant_result = None
-                mutant_failed = True
-                mutant_error = type(e)
-            # We should check that these are correct, and if we are missing any cases
-            # If the original function had a different result than the mutant, mutant was killed
-            if original_failed != mutant_failed:
-                mutants_killed += 1
-            # If the original input passes and the mutant_result is different from the result a mutant was killed
-            elif not original_failed and mutant_result != result:
-                mutants_killed += 1
-            # If the original input failed and the mutant error is not equal the original error a mutant was killed
-            elif original_failed and mutant_error != original_error:
-                mutants_killed += 1
-        return (result, outcome, mutants_killed)
+    behaviour(mutant_name, inp) is supplied by main. It runs the WHOLE program
+    with that one mutant switched on (However, if mutant_name = None, then it is the original program)
+    and behaviour(mutant_name, inp) returns a tuple that can be compared with !=, for example:
+        ("OK", "<text of the parsed result>")
+        ("INVALID", "<error message>")
+        ("CRASH", "<error type>", "<error message>")
+        ("TIMEOUT",)
+
+    run() returns (result, outcome, killed), where killed is the SET of names of
+    mutants whose behaviour differs from the original.
+    """
+
+    def __init__(self, behaviour, mutant_names):
+        super().__init__()
+        self.behaviour = behaviour
+        self.mutant_names = list(mutant_names)
+
+    def run(self, inp):
+        original = self.behaviour(None, inp)
+
+        killed = set()
+        for name in self.mutant_names:
+            if self.behaviour(name, inp) != original:
+                killed.add(name)
+
+        # Same meaning as in the coverage fuzzer: invalid TOML is expected (PASS),
+        # only an unexpected crash of the original program counts as FAIL.
+        if original[0] == "CRASH":
+            outcome = self.FAIL
+        else:
+            outcome = self.PASS
+
+        if original[0] == "OK":
+            result = original[1]
+        else:
+            result = None
+
+        return (result, outcome, killed)
 
 if __name__ == '__main__':
     http_runner = FunctionCoverageRunner(http_program)
