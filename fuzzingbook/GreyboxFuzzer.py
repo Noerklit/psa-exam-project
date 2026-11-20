@@ -266,6 +266,23 @@ class PowerSchedule:
         seed: Seed = random.choices(population, weights=norm_energy)[0]
         return seed
 
+class MutantSchedule(PowerSchedule):
+    def __init__(self):
+        super().__init__()
+        self.kill_counts = {} # mutant name ->MAPS TO-> number of generated inputs that killed it
+
+    def record(self, killed):
+        """The fuzzer should call this once for every input it runs."""
+        for mutant in killed:
+            self.kill_counts[mutant] = self.kill_counts.get(mutant, 0) + 1  # increase the times each mutant has been killed by 1
+
+    def assignEnergy(self, population):
+        for seed in population:
+            energy = 1  # the 1 makes sure no seed ever has 0 as their energy
+            for mutant in seed.mutants_killed:
+                energy = energy + 1 / self.kill_counts[mutant]
+            seed.energy = energy
+
 if __name__ == '__main__':
     population = [Seed("A"), Seed("B"), Seed("C")]
     schedule = PowerSchedule()
@@ -432,7 +449,7 @@ class GreyboxFuzzer_MutationGuided(AdvancedMutationFuzzer):
     
     def reset(self):
         super().reset()
-        self.max_mutants_killed = 0
+        self.killed_so_far = set()
         self.population = []
         
     def run(self, runner) -> Tuple[Any, str]:
@@ -442,13 +459,23 @@ class GreyboxFuzzer_MutationGuided(AdvancedMutationFuzzer):
         we add the input to our population 
         (The runner for this needs to be defined as well)    
         """
-        result, outcome, mutants_killed = runner.run(self.inp)
-        
-        if mutants_killed > self.max_mutants_killed:
-            self.max_mutants_killed = mutants_killed
-            seed = Seed(self.inp)
+        result, outcome, mutants_killed = super().run(runner)     # This calls the self.fuzz() for us
+
+        self.schedule.record(mutants_killed) #Make sure to record the mutants killed, for the scehduler!
+
+        new_kills = mutants_killed - self.killed_so_far ## This creates the set of killed mutants that have NOT been seen before
+
+        ## We try to scehdule a seed if it kills an unkilled mutant, or the population is currently empty
+        if len(new_kills) > 0 or len(self.population) == 0:
+
+            for mutant in new_kills:
+                self.killed_so_far.add(mutant) ## add the new mutants killed to the set of mutants.
+
+            # Adding this seed to the population
+            seed = Seed(self.inp) 
             seed.mutants_killed = mutants_killed
             self.population.append(seed)
+            
         return (result, outcome)
         
 
