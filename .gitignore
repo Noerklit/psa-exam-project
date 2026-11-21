@@ -221,3 +221,5 @@ __marimo__/
 
 #Mutmut
 /mutants
+
+/fuzzing_seeds
