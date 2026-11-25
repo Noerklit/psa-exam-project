@@ -6,6 +6,7 @@ from pathlib import Path # For reading seeds.
 from fuzzingbook.Grammars import is_valid_grammar
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
 from grammars.toml_grammar import TOML_GRAMMAR
+from grammars.js_grammar import JS_GRAMMAR
 
 def gen_initial_seeds(out_dir: str, num_seeds: int, grammar: dict[str, Any] | None, min_nonterminals: int, max_nonterminals: int):
   """Generates initial seeds based on a grammar
@@ -17,7 +18,7 @@ def gen_initial_seeds(out_dir: str, num_seeds: int, grammar: dict[str, Any] | No
   """
   # Fallback grammar for now
   if grammar is None:
-    grammar = TOML_GRAMMAR
+    grammar = JS_GRAMMAR
     
   output_dir = Path(out_dir)
   print(out_dir)
@@ -44,12 +45,13 @@ def gen_initial_seeds(out_dir: str, num_seeds: int, grammar: dict[str, Any] | No
     # I am unsure of if we want an extra check here for the string generated, in terms of whether it is actually
     # valid as input. But I would assume we just want to generate it based on the grammar and that is enough
     seeds.add(string)
+    print("Length of seed set: ", len(seeds))
   
   print(f"Generated {len(seeds)} seeds")
   
   output_dir.mkdir(parents=True, exist_ok=True)
   for i, s in enumerate(seeds):
-    with open(output_dir / f"seed_{i:03d}.toml", "w", encoding="utf-8", newline="") as f:
+    with open(output_dir / f"seed_{i:03d}.js", "w", encoding="utf-8", newline="") as f:
       f.write(s)
   print(f"Seeds written to files in: {out_dir}")
   
