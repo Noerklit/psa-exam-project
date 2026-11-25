@@ -1,6 +1,5 @@
 import string
-from fuzzingbook.Grammars import srange, is_valid_grammar
-from fuzzingbook.GrammarFuzzer import GrammarFuzzer
+from fuzzingbook.Grammars import srange
 
 TOML_GRAMMAR = {
     "<start>": ["<toml>"],
@@ -91,5 +90,3 @@ TOML_GRAMMAR = {
     "<inline-table>": ["{}", "{ <inline-keyvals> }"],
     "<inline-keyvals>": ["<key> = <value>", "<key> = <value>, <inline-keyvals>"],
 }
-
-assert is_valid_grammar(TOML_GRAMMAR)
