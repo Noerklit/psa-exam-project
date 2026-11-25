@@ -28,6 +28,7 @@ pyan = { git = "https://github.com/uds-se/pyan" }
 
 [project.scripts]
 gen-seeds = "src.util.generate_seeds:main"
+delete-seeds = "src.util.delete_seeds:main"
 
 [build-system]
 requires = ["hatchling"]

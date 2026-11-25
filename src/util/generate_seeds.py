@@ -5,7 +5,7 @@ import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from th
 from pathlib import Path # For reading seeds.
 from fuzzingbook.Grammars import is_valid_grammar
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
-from toml_grammar import TOML_GRAMMAR
+from grammars.toml_grammar import TOML_GRAMMAR
 
 def gen_initial_seeds(out_dir: str, num_seeds: int, grammar: dict[str, Any] | None, min_nonterminals: int, max_nonterminals: int):
   """Generates initial seeds based on a grammar

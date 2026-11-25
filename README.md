@@ -202,9 +202,18 @@ Split mutants into a **guidance set** (used by the fuzzer) and a **held-out set*
 - Use the same trial budget and seeds for every fuzzer in a comparison, and also compare at equal wall-clock time, since the mutation-guided fuzzer is slower per input.
 - Commit `uv.lock`, and note the Python version (3.13 in WSL at the time of writing).
 
-
+## Before running any commands ensure you have run the following to syncronize your setup:
+```bash
+uv sync
+``` 
 
 ## How to generate seeds
 ```bash
 uv run gen-seeds
 ``` 
+
+## How to delete seeds
+```bash
+uv run delete-seeds
+``` 
+
