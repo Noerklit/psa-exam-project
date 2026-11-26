@@ -28,3 +28,7 @@ We have mutated our parser via MutMut, however it has mutated each funuction als
 -------------- 27/11-2026 -------------------
 Is it alright to have the grammar for the specific language/parser be made using AI, or is this something we should do by hand
 or using a library from the fuzzing book?
+---------------- 19/11-2026 ----------------------------
+How do we measure 
+What is meant by "The goal is to assess whether mutation-based fitness leads to higher coverage, a higher mutation score on mutants not used for guidance, or more 
+bug-revealing inputs, compared to coverage-guided fuzzing."
