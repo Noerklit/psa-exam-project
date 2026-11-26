@@ -20,8 +20,9 @@ dev = [
 pythonpath = ["."]
 
 [tool.mutmut]
-paths_to_mutate = ["toml_sut/"]
-tests_dir = ["tests/"]
+source_paths = ["jsparser_sut"]
+pytest_add_cli_args_test_selection = ["tests/"]
+do_not_mutate = ["jsparser_sut/pyjsparserdata.py", "jsparser_sut/std_nodes.py"]
 
 [tool.uv.sources]
 pyan = { git = "https://github.com/uds-se/pyan" }

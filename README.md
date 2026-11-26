@@ -38,6 +38,44 @@ uv run gen-seeds
 uv run delete-seeds
 ``` 
 
+### pyproject.toml
+To add a dependency for the project, run
+```bash
+uv add <package name>
+```
+```toml
+#Defines mutmut settings
+[tool.mutmut] 
+
+# source paths defines where the system mutmut should run on is located
+source_paths = ["jsparser_sut"]
+
+# mutmut runs on initial tests, this is where they are located
+pytest_add_cli_args_test_selection = ["tests/"]
+
+# Defines if there are any files in the source_paths folder that mutmut should not mutate.
+do_not_mutate = ["jsparser_sut/pyjsparserdata.py", "jsparser_sut/std_nodes.py"]
+
+# Unsure what this does
+[tool.uv.sources]
+pyan = { git = "https://github.com/uds-se/pyan" }
+
+# Is used to define scripts that can then be run with commands as shown in the running things section
+[project.scripts]
+gen-seeds = "src.util.generate_seeds:main"
+delete-seeds = "src.util.delete_seeds:main"
+
+# Needs a more refined explanation, but is used for the thing below
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# This also needs an explanation
+[tool.hatch.build.targets.wheel]
+packages = ["src", "toml_sut"]
+```
+
+
 ### Baseline fuzzer
 
 ```bash

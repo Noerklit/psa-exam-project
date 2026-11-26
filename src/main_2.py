@@ -70,7 +70,7 @@ def load_seeds(directory: str) -> list[str]:
                 seeds.append(f.read())
     return seeds
 
-SEEDS = load_seeds("fuzzing_seeds/TOML/")
+SEEDS = load_seeds("fuzzing_seeds/")
 
 
 def testMutation():
