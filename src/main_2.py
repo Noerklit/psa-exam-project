@@ -5,6 +5,7 @@ from pathlib import Path # For reading seeds and getting the fuzzed file
     # This is for locating the fuzzed file
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "mutants"))     # must come BEFORE the import below
+MUTANTS_DIR = PROJECT_ROOT / "mutants"
 
 import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from the project root
 
@@ -12,12 +13,18 @@ import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from th
 if "mutants" not in str(tomllib.__file__):
     raise SystemExit("The imported parser is not the mutmut copy: " + str(tomllib.__file__))
 
+# Fuzzingbook imports
 from fuzzingbook.GreyboxFuzzer import Mutator, PowerSchedule, GreyboxFuzzer, GreyboxFuzzer_MutationGuided, MutantSchedule
 from fuzzingbook.MutationFuzzer import FunctionCoverageRunner, MutationGuidedRunner
 from fuzzingbook.Coverage import population_coverage
+
+
 import signal ## For Timeouts during Mutant running
 
 import os
+
+#Import the file for loading the mutant names:
+from src.mutant_key_loader import load_mutant_keys
 
 
 def sut(inp: str):
@@ -120,9 +127,9 @@ if __name__ == "__main__":
     #---------------------------------------------------------------------------------------------
     # Mutation guided fuzzer
 
-    #   ----IMPLEMENTED LATER----
-    # names = mutant_names(MUTANT_FILTER)
-    names = ["toml_sut._parser.x_loads__mutmut_90", "toml_sut._parser.x_loads__mutmut_106", "toml_sut._parser.x_loads__mutmut_40", "toml_sut._parser.x\u01c1NestedDict\u01c1append_nest_to_list__mutmut_8", "toml_sut._parser.x_skip_comments_and_array_ws__mutmut_10", "toml_sut._parser.x_key_value_rule__mutmut_6", "toml_sut._parser.x_parse_key_value_pair__mutmut_20", "toml_sut._parser.x_parse_key_value_pair__mutmut_30"]
+    names = load_mutant_keys(MUTANTS_DIR / "toml_sut" / "_parser.py.meta")
+    # Manual names, used for testing
+    #names = ["toml_sut._parser.x_loads__mutmut_90", "toml_sut._parser.x_loads__mutmut_106", "toml_sut._parser.x_loads__mutmut_40", "toml_sut._parser.x\u01c1NestedDict\u01c1append_nest_to_list__mutmut_8", "toml_sut._parser.x_skip_comments_and_array_ws__mutmut_10", "toml_sut._parser.x_key_value_rule__mutmut_6", "toml_sut._parser.x_parse_key_value_pair__mutmut_20", "toml_sut._parser.x_parse_key_value_pair__mutmut_30"]
 
     if len(names) == 0:
         raise SystemExit("No mutants found. Run 'uv run mutmut run' once for generating the mutant file")
@@ -134,7 +141,7 @@ if __name__ == "__main__":
 
     fuzzer_2 = GreyboxFuzzer_MutationGuided(SEEDS, Mutator(), MutantSchedule())
     runner_2 = MutationGuidedRunner(behaviour, names)
-    outcomes_2 = fuzzer_2.runs(runner_2, trials=15)
+    outcomes_2 = fuzzer_2.runs(runner_2, trials=50)
 
     print("Total generated inputs :", len(fuzzer_2.inputs))
     print("Population size  :", len(fuzzer_2.population))
@@ -159,4 +166,9 @@ if __name__ == "__main__":
                 print(f"\n--- Test case {i} ---")
                 print("Input:", repr(inp))
                 print("Outcome:", outcome)
+
+    print("POPULATION REMAINING")
+    print("----------------------------------------------------------")
+    for i, ele in enumerate(fuzzer_2.population):
+        print(f"population number {i}, is: {ele}")
     
