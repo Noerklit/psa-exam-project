@@ -1,225 +1,642 @@
 {
     "tests_by_mangled_function_name": {
-        "toml_sut._parser.x_make_safe_parse_float": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipSingleLineComment": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_loads": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_basic_str": [
-            "tests/test_tomllib.py::test_basic"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1peek": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_key_value_pair": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1getIdentifier": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_key": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parse": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_key_value_rule": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePattern": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_one_line_basic_str": [
-            "tests/test_tomllib.py::test_basic"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanNumericLiteral": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._re.x_match_to_number": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1consumeSemicolon": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1ccode": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1__init__": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1binaryPrecedence": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1Output\u01c1__init__": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipComment": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1is_": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_skip_comment": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_value": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1match": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_key_part": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableStatement": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_skip_chars": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_invalid",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePostfixExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": [
-            "tests/test_tomllib.py::test_basic",
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchAssign": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": [
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseEmptyStatement": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_skip_comments_and_array_ws": [
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseScriptBody": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1set": [
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_create_dict_rule": [
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isolateCoverGrammar": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x_parse_array": [
-            "tests/test_tomllib.py::test_table_and_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1substr": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
         ],
-        "toml_sut._parser.x\u01c1TOMLDecodeError\u01c1__init__": [
-            "tests/test_tomllib.py::test_invalid"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseProgram": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanIdentifier": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePrimaryExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1lex": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expect": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseAssignmentExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanPunctuator": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementListItem": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1at": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclarationList": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseUnaryExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchKeyword": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1clean": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x_parse": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseConditionalExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expectKeyword": [
+            "tests/test_jsparser.py::test_invalid",
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableIdentifier": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function",
+            "tests/test_jsparser.py::test_var"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1validateParam": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionSourceElements": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParam": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePatternWithDefault": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseReturnStatement": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParams": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration": [
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseExpression": [
+            "tests/test_jsparser.py::test_if_for",
+            "tests/test_jsparser.py::test_function"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement": [
+            "tests/test_jsparser.py::test_if_for"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement": [
+            "tests/test_jsparser.py::test_if_for"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArguments": [
+            "tests/test_jsparser.py::test_if_for"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementList": [
+            "tests/test_jsparser.py::test_if_for"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBlock": [
+            "tests/test_jsparser.py::test_if_for"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1unexpectedTokenError": [
+            "tests/test_jsparser.py::test_invalid"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1throwUnexpectedToken": [
+            "tests/test_jsparser.py::test_invalid"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1createError": [
+            "tests/test_jsparser.py::test_invalid"
         ]
     },
     "duration_by_test": {
-        "tests/test_tomllib.py::test_uses_local_copy": 0.00014693900016027328,
-        "tests/test_tomllib.py::test_basic": 0.0006163699999888195,
-        "tests/test_tomllib.py::test_table_and_array": 0.0005696609998722124,
-        "tests/test_tomllib.py::test_invalid": 0.00031065000007401977
+        "tests/test_jsparser.py::test_var": 0.0007839780009817332,
+        "tests/test_jsparser.py::test_function": 0.0008833569954731502,
+        "tests/test_jsparser.py::test_if_for": 0.0027477680050651543,
+        "tests/test_jsparser.py::test_invalid": 0.0006250470032682642
     },
-    "stats_time": 1.0023092999999998,
+    "stats_time": 1.7429229000000002,
     "function_hashes": {
-        "toml_sut._re.x_match_to_datetime": "9b1548eef3e4",
-        "toml_sut._re.x_match_to_localtime": "a9cad682c4be",
-        "toml_sut._re.x_match_to_number": "d19b810b03f4",
-        "toml_sut._parser.x\u01c1TOMLDecodeError\u01c1__init__": "248e634d3404",
-        "toml_sut._parser.x_load": "b05a58e64137",
-        "toml_sut._parser.x_loads": "dff502a8b621",
-        "toml_sut._parser.x\u01c1Flags\u01c1__init__": "99e807b3fa89",
-        "toml_sut._parser.x\u01c1Flags\u01c1add_pending": "f9205ee6e63b",
-        "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": "bc8bbf7f2b59",
-        "toml_sut._parser.x\u01c1Flags\u01c1unset_all": "372571c5c59d",
-        "toml_sut._parser.x\u01c1Flags\u01c1set": "de9889c6315c",
-        "toml_sut._parser.x\u01c1Flags\u01c1is_": "5e2b4769059a",
-        "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": "c9f7e130e0c2",
-        "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": "5037d2006fe5",
-        "toml_sut._parser.x\u01c1NestedDict\u01c1append_nest_to_list": "661080880ea9",
-        "toml_sut._parser.x\u01c1Output\u01c1__init__": "35383dc0a5d5",
-        "toml_sut._parser.x_skip_chars": "c503b70ec178",
-        "toml_sut._parser.x_skip_until": "7f299049a4b9",
-        "toml_sut._parser.x_skip_comment": "37f00191f461",
-        "toml_sut._parser.x_skip_comments_and_array_ws": "3811587e3bbe",
-        "toml_sut._parser.x_create_dict_rule": "dfb26c078cfa",
-        "toml_sut._parser.x_create_list_rule": "8096908aca23",
-        "toml_sut._parser.x_key_value_rule": "b439c2dcacbc",
-        "toml_sut._parser.x_parse_key_value_pair": "be23a0003fa7",
-        "toml_sut._parser.x_parse_key": "64029c1c52b6",
-        "toml_sut._parser.x_parse_key_part": "a690d2cb4d12",
-        "toml_sut._parser.x_parse_one_line_basic_str": "1c213114b289",
-        "toml_sut._parser.x_parse_array": "2ee54b7ea3d4",
-        "toml_sut._parser.x_parse_inline_table": "c6e8eec4c538",
-        "toml_sut._parser.x_parse_basic_str_escape": "96ba8c3b6b2f",
-        "toml_sut._parser.x_parse_basic_str_escape_multiline": "dea55b093b9c",
-        "toml_sut._parser.x_parse_hex_char": "50ff150cb663",
-        "toml_sut._parser.x_parse_literal_str": "2a8a72de8147",
-        "toml_sut._parser.x_parse_multiline_str": "284e2a54f616",
-        "toml_sut._parser.x_parse_basic_str": "682b9ff9a455",
-        "toml_sut._parser.x_parse_value": "7fb860264322",
-        "toml_sut._parser.x_is_unicode_scalar_value": "f5887c64413f",
-        "toml_sut._parser.x_make_safe_parse_float": "f7d2afc41415"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1test": "3bf38db060e2",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1clean": "9b4077d9051a",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipSingleLineComment": "7b39df2ddb30",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipMultiLineComment": "00fa6a36bcb0",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipComment": "5e633c6c76e4",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanHexEscape": "ad1802016e6e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanUnicodeCodePointEscape": "edf56477dea1",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1ccode": "7df2ff577cbf",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1log_err_case": "cb8eda85be3a",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1at": "295a0fc32dd2",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1substr": "845c188e612e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1getEscapedIdentifier": "301327ea3da0",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1getIdentifier": "b2ae841c65ad",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanIdentifier": "9ad073719a7a",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanPunctuator": "4f71f362893e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanHexLiteral": "cad93e69136b",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanBinaryLiteral": "beb1d40f2f04",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanOctalLiteral": "c203c604b985",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1octalToDecimal": "ef5276ed6606",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isImplicitOctalLiteral": "b8c3d90076a6",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanNumericLiteral": "1a4194102238",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1_interpret_regexp": "f860cad8a488",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanStringLiteral": "4512ff06a761",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanTemplate": "ee6dcc0041a8",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanRegExpBody": "c4c455f1f600",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanRegExpFlags": "41ce92d7657e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanRegExp": "00e59f3b2732",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isIdentifierName": "b31bd4575840",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance": "fa34720405c4",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1lex": "5963703014dd",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1peek": "1707e9f3dc74",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1createError": "b36d82e68cfa",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1throwError": "eaf1abe650b9",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1tolerateError": "915a2802ad2c",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1unexpectedTokenError": "81f0d44b4c9f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1throwUnexpectedToken": "df49c4e27f7f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1tolerateUnexpectedToken": "dc173efaf46a",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expect": "13d80046b776",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expectCommaSeparator": "c2d3c16320b5",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expectKeyword": "96f177292644",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1match": "5a173325ca4a",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchKeyword": "13d2acc7c58e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchContextualKeyword": "14beee7a67f7",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchAssign": "9d4217ca77ec",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1consumeSemicolon": "e4350e1a9c01",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isolateCoverGrammar": "b2f07d65d083",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar": "12f39dfeb07d",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArrayPattern": "08edde007cee",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePropertyPattern": "32c46bb1ab4d",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseObjectPattern": "049fbc906161",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePattern": "d48f96922e51",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePatternWithDefault": "a9c6384239df",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArrayInitialiser": "20acf3a32203",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePropertyFunction": "2193cd7d3b41",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePropertyMethodFunction": "b91c27a9ad4e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseObjectPropertyKey": "24e39ac864f7",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1lookaheadPropertyName": "6731969be6f5",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1tryParseMethodDefinition": "4fb8a3693530",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1checkProto": "dab43ba7ce97",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseObjectProperty": "469deb1f54c4",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseObjectInitialiser": "29cba559107b",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1reinterpretExpressionAsPattern": "c1d132c491d6",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseTemplateElement": "318063a6fcb9",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseTemplateLiteral": "f89718708b93",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseGroupExpression": "f96d53dca16b",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePrimaryExpression": "b3bf15791c3e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArguments": "2fc5f560aa94",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseNonComputedProperty": "82a86460329f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseNonComputedMember": "0afdc6605b22",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseComputedMember": "923ad9bb617c",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseNewExpression": "bd63feccb32f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall": "ce166678395a",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpression": "58231b578b9f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePostfixExpression": "99e1de46cf6b",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseUnaryExpression": "d36dc378eb2f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1binaryPrecedence": "f1c238fa8958",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression": "ec0c4e07fb3f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseConditionalExpression": "c5395713f09d",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseConciseBody": "6a8ca703b201",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1checkPatternParam": "8296191724c5",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1reinterpretAsCoverFormalsList": "13f2ad4b1e9e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArrowFunctionExpression": "2607d10694a4",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseAssignmentExpression": "dd05b2fd9747",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseExpression": "31ffbd1dcc07",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementListItem": "c7ade4565dca",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePyimportStatement": "5c18f55382f0",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementList": "a01170245a3f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBlock": "771ac96b4450",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableIdentifier": "bdb1a265a54c",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration": "3a4b9e88417e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclarationList": "b322663e1ff0",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableStatement": "35858905dd81",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLexicalBinding": "dd680bb1f9a5",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBindingList": "1c03ca7bd680",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLexicalDeclaration": "4b005d69cd70",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseRestElement": "2133d05e14fb",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseEmptyStatement": "322a45847e9c",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseExpressionStatement": "d0091babfd77",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement": "32f582a98038",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseDoWhileStatement": "16f756e0f2db",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseWhileStatement": "705ac4dbcd11",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement": "ca8321dd87b0",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseContinueStatement": "edf43227f68d",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBreakStatement": "dd46cb65a2d9",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseReturnStatement": "f7a7218bc19f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseWithStatement": "b5f006dfb6fa",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseSwitchCase": "0908393db42b",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseSwitchStatement": "0ec9609b5f51",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseThrowStatement": "eb3590101a5b",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseCatchClause": "1a1009264297",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseTryStatement": "6006a2d956b6",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseDebuggerStatement": "a1a201b1c641",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement": "ae461fb6c72f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionSourceElements": "5331ab20aad0",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1validateParam": "147aa8ccbff4",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParam": "56949b7dff5d",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParams": "c37d02bc7f1f",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration": "1bd7e30f1c59",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionExpression": "323989b5860d",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseClassExpression": "ca45ed512317",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseClassDeclaration": "f688c78a29db",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseScriptBody": "4322a59ef8b2",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseProgram": "82c3be0d799e",
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parse": "74e06fc8d786",
+        "jsparser_sut.parser.x_parse": "cfbb666975c5"
     },
     "function_dependencies": {
-        "toml_sut._parser.x\u01c1Output\u01c1__init__": [
-            "toml_sut._parser.x_loads"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1clean": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parse",
+            "jsparser_sut.parser.x_parse"
         ],
-        "toml_sut._parser.x\u01c1NestedDict\u01c1__init__": [
-            "toml_sut._parser.x\u01c1Output\u01c1__init__"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parse": [
+            "jsparser_sut.parser.x_parse"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1__init__": [
-            "toml_sut._parser.x\u01c1Output\u01c1__init__"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseProgram": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parse"
         ],
-        "toml_sut._parser.x_make_safe_parse_float": [
-            "toml_sut._parser.x_loads"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1peek": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseProgram"
         ],
-        "toml_sut._parser.x_skip_chars": [
-            "toml_sut._parser.x_create_dict_rule",
-            "toml_sut._parser.x_parse_key_part",
-            "toml_sut._parser.x_parse_key_value_pair",
-            "toml_sut._parser.x_loads",
-            "toml_sut._parser.x_skip_comments_and_array_ws",
-            "toml_sut._parser.x_parse_key"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipComment": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1lex",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1peek"
         ],
-        "toml_sut._parser.x_key_value_rule": [
-            "toml_sut._parser.x_loads"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1lex",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1peek"
         ],
-        "toml_sut._parser.x_parse_key_value_pair": [
-            "toml_sut._parser.x_key_value_rule"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1ccode": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanIdentifier",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanNumericLiteral",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1getIdentifier"
         ],
-        "toml_sut._parser.x_parse_key": [
-            "toml_sut._parser.x_parse_key_value_pair",
-            "toml_sut._parser.x_create_dict_rule"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanIdentifier": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance"
         ],
-        "toml_sut._parser.x_parse_key_part": [
-            "toml_sut._parser.x_parse_key"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1getIdentifier": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanIdentifier"
         ],
-        "toml_sut._parser.x_parse_value": [
-            "toml_sut._parser.x_parse_key_value_pair",
-            "toml_sut._parser.x_parse_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseScriptBody": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseProgram"
         ],
-        "toml_sut._re.x_match_to_number": [
-            "toml_sut._parser.x_parse_value"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementListItem": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementList",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionSourceElements",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseScriptBody"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1is_": [
-            "toml_sut._parser.x_create_dict_rule",
-            "toml_sut._parser.x_key_value_rule"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isolateCoverGrammar",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementListItem"
         ],
-        "toml_sut._parser.x\u01c1NestedDict\u01c1get_or_create_nest": [
-            "toml_sut._parser.x_create_dict_rule",
-            "toml_sut._parser.x_key_value_rule"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableStatement": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement"
         ],
-        "toml_sut._parser.x_skip_comment": [
-            "toml_sut._parser.x_loads",
-            "toml_sut._parser.x_skip_comments_and_array_ws"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expectKeyword": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseReturnStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement"
         ],
-        "toml_sut._parser.x_parse_one_line_basic_str": [
-            "toml_sut._parser.x_parse_value"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1lex": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePostfixExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1consumeSemicolon",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePrimaryExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expect",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expectKeyword",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableIdentifier",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement"
         ],
-        "toml_sut._parser.x_parse_basic_str": [
-            "toml_sut._parser.x_parse_one_line_basic_str"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclarationList": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1finalize_pending": [
-            "toml_sut._parser.x_loads"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclarationList"
         ],
-        "toml_sut._parser.x_create_dict_rule": [
-            "toml_sut._parser.x_loads"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePattern": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePatternWithDefault",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration"
         ],
-        "toml_sut._parser.x\u01c1Flags\u01c1set": [
-            "toml_sut._parser.x_create_dict_rule",
-            "toml_sut._parser.x_key_value_rule"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableIdentifier": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePattern",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration"
         ],
-        "toml_sut._parser.x_parse_array": [
-            "toml_sut._parser.x_parse_value"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanPunctuator": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance"
         ],
-        "toml_sut._parser.x_skip_comments_and_array_ws": [
-            "toml_sut._parser.x_parse_array"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1substr": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanPunctuator"
         ],
-        "toml_sut._parser.x\u01c1TOMLDecodeError\u01c1__init__": [
-            "toml_sut._parser.x_parse_value"
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1match": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePostfixExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArguments",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionSourceElements",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParam",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePattern",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePatternWithDefault",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePrimaryExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseConditionalExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseAssignmentExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementList",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParams",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclarationList"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1scanNumericLiteral": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1advance"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isolateCoverGrammar": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableDeclaration",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseExpression"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseAssignmentExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isolateCoverGrammar"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseConditionalExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseAssignmentExpression"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePostfixExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseConditionalExpression"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseUnaryExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1isolateCoverGrammar",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePostfixExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseUnaryExpression"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchKeyword": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePrimaryExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1inheritCoverGrammar"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1binaryPrecedence": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBinaryExpression"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1matchAssign": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseAssignmentExpression"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1consumeSemicolon": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseVariableStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseReturnStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1at": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1consumeSemicolon"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseEmptyStatement": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1expect": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArguments",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseEmptyStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionSourceElements",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParams",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBlock"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipSingleLineComment": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1skipComment"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementListItem"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParams": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParam": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParams"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePatternWithDefault": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParam"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1validateParam": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseParam"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionSourceElements": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseFunctionDeclaration"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseReturnStatement": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseExpression": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseReturnStatement",
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseIfStatement": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBlock": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatementList": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseBlock"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseArguments": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseLeftHandSideExpressionAllowCall"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseForStatement": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parseStatement"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1throwUnexpectedToken": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1parsePattern"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1unexpectedTokenError": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1throwUnexpectedToken"
+        ],
+        "jsparser_sut.parser.x\u01c1PyJsParser\u01c1createError": [
+            "jsparser_sut.parser.x\u01c1PyJsParser\u01c1unexpectedTokenError"
         ]
     },
     "config_fingerprint": {
@@ -229,47 +646,35 @@
         "type_check": "2e38e77b22c3"
     },
     "watched_file_hashes": {
-        "pyproject.toml": "ef01e3603305",
-        "uv.lock": "3c0595782078",
+        "pyproject.toml": "bf6dbf3fbcc0",
+        "uv.lock": "4d0c0c3ce797",
         "Description of task.txt": "a2dbc65a65af",
-        "Questions_and_answers.txt": "d5fa6f515882",
+        "Questions_and_answers.txt": "f4bea9802e60",
         "SUT.txt": "a8e8ac45692c",
-        "fuzzing_seeds/TOML/CRLF.txt": "b3879294bfb6",
-        "fuzzing_seeds/TOML/array_of_tables.txt": "8c96eadfbd80",
-        "fuzzing_seeds/TOML/arrays.txt": "0bfea7fa457c",
-        "fuzzing_seeds/TOML/booleans_and_empty.txt": "13ab36005dfc",
-        "fuzzing_seeds/TOML/border_numbers.txt": "2b637ffccb20",
-        "fuzzing_seeds/TOML/comments.txt": "c4d0967c75d0",
-        "fuzzing_seeds/TOML/dates_and_time.txt": "b3f9bd708b65",
-        "fuzzing_seeds/TOML/dates_edge.txt": "7ceb7fb586c1",
-        "fuzzing_seeds/TOML/escapes.txt": "a5f54ada9403",
-        "fuzzing_seeds/TOML/inline_tables.txt": "e2ea8fc051f0",
-        "fuzzing_seeds/TOML/literal_strings.txt": "7800b7f19abf",
-        "fuzzing_seeds/TOML/multi_line_literal_strings.txt": "26aa732da956",
-        "fuzzing_seeds/TOML/multi_line_strings.txt": "0dd54f470d46",
-        "fuzzing_seeds/TOML/numbers.txt": "bd550bce2992",
-        "fuzzing_seeds/TOML/strings.txt": "b68a7676e8ba",
-        "mutants/pyproject.toml": "ef01e3603305",
-        "mutants/toml_sut/__init__.py.meta": "8337af0c4106",
-        "mutants/toml_sut/__init__.py.spans": "50434fb64e05",
-        "mutants/toml_sut/_parser.py.meta": "952db9b7c18e",
-        "mutants/toml_sut/_parser.py.spans": "b4aaa8014e78",
-        "mutants/toml_sut/_re.py.meta": "6e9ccc6fd232",
-        "mutants/toml_sut/_re.py.spans": "0b9722ea4415",
-        "mutants/toml_sut/_types.py.meta": "8337af0c4106",
-        "mutants/toml_sut/_types.py.spans": "50434fb64e05",
-        "mutants/toml_sut/mypy.ini": "a56b56a5cddd",
-        "mutants/tomllib/__init__.py.meta": "8337af0c4106",
-        "mutants/tomllib/__init__.py.spans": "50434fb64e05",
-        "mutants/tomllib/_parser.py.meta": "3fd51849219a",
-        "mutants/tomllib/_parser.py.spans": "b4aaa8014e78",
-        "mutants/tomllib/_re.py.meta": "3079c3b62101",
-        "mutants/tomllib/_re.py.spans": "0b9722ea4415",
-        "mutants/tomllib/_types.py.meta": "8337af0c4106",
-        "mutants/tomllib/_types.py.spans": "50434fb64e05",
-        "mutants/tomllib/mypy.ini": "a56b56a5cddd",
-        "mutants/uv.lock": "3c0595782078",
+        "deprecated/old_mutantsfolder/mutmut-stats.json": "9487095e825e",
+        "deprecated/old_mutantsfolder/pyproject.toml": "06fb2c8dfbc6",
+        "deprecated/old_mutantsfolder/toml_sut/__init__.py.meta": "8337af0c4106",
+        "deprecated/old_mutantsfolder/toml_sut/__init__.py.spans": "50434fb64e05",
+        "deprecated/old_mutantsfolder/toml_sut/_parser.py.meta": "3f4a744536de",
+        "deprecated/old_mutantsfolder/toml_sut/_parser.py.spans": "b4aaa8014e78",
+        "deprecated/old_mutantsfolder/toml_sut/_re.py.meta": "ba817cb75980",
+        "deprecated/old_mutantsfolder/toml_sut/_re.py.spans": "0b9722ea4415",
+        "deprecated/old_mutantsfolder/toml_sut/_types.py.meta": "8337af0c4106",
+        "deprecated/old_mutantsfolder/toml_sut/_types.py.spans": "50434fb64e05",
+        "deprecated/old_mutantsfolder/toml_sut/mypy.ini": "a56b56a5cddd",
+        "deprecated/old_mutantsfolder/tomllib/__init__.py.meta": "8337af0c4106",
+        "deprecated/old_mutantsfolder/tomllib/__init__.py.spans": "50434fb64e05",
+        "deprecated/old_mutantsfolder/tomllib/_parser.py.meta": "3fd51849219a",
+        "deprecated/old_mutantsfolder/tomllib/_parser.py.spans": "b4aaa8014e78",
+        "deprecated/old_mutantsfolder/tomllib/_re.py.meta": "3079c3b62101",
+        "deprecated/old_mutantsfolder/tomllib/_re.py.spans": "0b9722ea4415",
+        "deprecated/old_mutantsfolder/tomllib/_types.py.meta": "8337af0c4106",
+        "deprecated/old_mutantsfolder/tomllib/_types.py.spans": "50434fb64e05",
+        "deprecated/old_mutantsfolder/tomllib/mypy.ini": "a56b56a5cddd",
+        "deprecated/old_mutantsfolder/uv.lock": "3c0595782078",
+        "mutants/pyproject.toml": "bf6dbf3fbcc0",
+        "mutants/uv.lock": "4d0c0c3ce797",
         "toml_sut/mypy.ini": "a56b56a5cddd"
     },
-    "git_commit": "4ff7dd67bb7a9c2ab19ecdd9515e0e47bc56ea87"
+    "git_commit": "9db51f5b587155a6e2e9bd77ac3fa7b5e67fe870"
 }

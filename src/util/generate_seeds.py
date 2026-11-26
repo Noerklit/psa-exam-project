@@ -1,11 +1,9 @@
 import os
 import random
 from typing import Any
-import toml_sut as tomllib   # resolves to YOUR local ./tomllib when run from the project root
 from pathlib import Path # For reading seeds.
 from fuzzingbook.Grammars import is_valid_grammar
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
-from grammars.toml_grammar import TOML_GRAMMAR
 from grammars.js_grammar import JS_GRAMMAR
 
 def gen_initial_seeds(out_dir: str, num_seeds: int, grammar: dict[str, Any] | None, min_nonterminals: int, max_nonterminals: int):
